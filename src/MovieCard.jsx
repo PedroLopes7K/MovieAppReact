@@ -1,8 +1,9 @@
 import React from 'react'
+import { Movie } from './StyledComponents'
 
 export default function MovieCard({movie}) {
   return (
-    <div className="movie">
+    <Movie className="movie">
           <div>
             <p>{movie.Year}</p>
           </div>
@@ -15,6 +16,6 @@ export default function MovieCard({movie}) {
             <span>{movie.Type}</span>
             <h3>{movie.Title}</h3>
           </div>
-        </div>
+     </Movie>
   )
 }
