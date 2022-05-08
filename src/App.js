@@ -3,7 +3,14 @@ import './App.css'
 import SearchIncon from './search.svg'
 import MovieCard from './MovieCard'
 import Footer from './Footer'
-import { H1, H2, Empty, Search, Container } from './StyledComponents'
+import {
+  Aplication,
+  H1,
+  H2,
+  Empty,
+  Search,
+  Container
+} from './StyledComponents'
 
 const API_URL = 'http://www.omdbapi.com/?apikey=e56775ff'
 
@@ -31,7 +38,7 @@ function App() {
     setMsg(true)
   }, [])
   return (
-    <div className="app">
+    <Aplication className="app">
       <H1>BuscaFlix</H1>
       <Search className="search">
         <input
@@ -67,7 +74,7 @@ function App() {
       )}
 
       <Footer />
-    </div>
+    </Aplication>
   )
 }
 

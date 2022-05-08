@@ -1,9 +1,10 @@
 import React from 'react'
+import { Ftr } from './StyledComponents'
 
 export default function Footer() {
   return (
     
-      <p className='footer'>&copy; Pedro Henrique Lopes - 2022</p>
+      <Ftr className='footer'>&copy; Pedro Henrique Lopes - 2022</Ftr>
     
   )
 }

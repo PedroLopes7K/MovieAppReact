@@ -1,21 +1,21 @@
 import React from 'react'
-import { Movie } from './StyledComponents'
+import { Movie, MovieDiv1, MovieDiv2, MovieDiv3 } from './StyledComponents'
 
 export default function MovieCard({movie}) {
   return (
     <Movie className="movie">
-          <div>
+          <MovieDiv1 className='Div1'>
             <p>{movie.Year}</p>
-          </div>
+          </MovieDiv1>
 
-          <div>
+          <MovieDiv2 className='Div2' >
             <img src={movie.Poster !== 'N/A' ? movie.Poster : "https://via.placeholder.com/400" } alt={movie.Title} />
-          </div>
+          </MovieDiv2>
 
-          <div>
+          <MovieDiv3 className='Div3'>
             <span>{movie.Type}</span>
             <h3>{movie.Title}</h3>
-          </div>
+          </MovieDiv3>
      </Movie>
   )
 }
