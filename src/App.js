@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import SearchIncon from './search.svg'
-import MovieCard from './MovieCard'
-import Footer from './Footer'
+// import MovieCard from './MovieCard'
+import MovieCard from './Components/MovieCard/MovieCard'
+// import Footer from './Footer'
+import Footer from './Components/Footer/Footer'
 import {
   Aplication,
   H1,
@@ -10,7 +12,8 @@ import {
   Empty,
   Search,
   Container
-} from './StyledComponents'
+} from './Components/Style/StyledComponents'
+// import { Empty } from './Components/Style/StyledComponents'
 
 const API_URL = 'http://www.omdbapi.com/?apikey=e56775ff'
 
